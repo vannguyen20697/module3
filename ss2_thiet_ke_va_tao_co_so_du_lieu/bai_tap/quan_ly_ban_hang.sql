@@ -25,10 +25,9 @@ create table order_detail(
     p_ID int not null,
     od_QTY int not null,
     primary key (o_ID,p_ID),
-    foreign key (o_ID) 
-				references order_1(o_ID),
-    foreign key (p_ID) 
-				references product(p_ID)
+    foreign key (o_ID) references orders(o_ID),
+    foreign key (p_ID) references product(p_ID)
     );
+    
     
     
