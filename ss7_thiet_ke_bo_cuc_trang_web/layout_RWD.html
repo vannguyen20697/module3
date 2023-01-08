@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .container div{
+        /*background-color: grey;*/
+        border: 1px solid;
+        padding: 20px;
+        font-size: 20px;
+        text-align: justify;
+    }
+    .container {
+        display: grid;
+        grid-template-areas:
+        'header header header login'
+        'menuLeft content1 content1 menuRight'
+        'menuLeft content2 content2 menuRight'
+        'footer footer footer footer'
+    }
+    .item1{grid-area: header;
+    }
+    .item2{grid-area: login}
+    .item3{grid-area: menuLeft}
+    .item4{grid-area: content1}
+    .item5{grid-area: content2}
+    .item6{grid-area: menuRight}
+    .item7{grid-area: footer}
+    .item1 ul li {
+        display: inline;
+        margin: 5px;
+    }
+</style>
+<body>
+<div class = "container">
+    <div class="item1">
+        <ul>
+            <li>Logo</li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Project</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="item2">Login</div>
+    <div class="item3">
+        <ul>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+        </ul>
+    </div>
+    <div class="item4">
+        <h2>Welcome</h2>
+        <p>Tết Nguyên Đán (còn gọi là Tết Cả, Tết Ta, Tết Âm lịch, Tết Cổ truyền hay đơn giản là Tết) là dịp lễ đầu năm mới theo âm lịch của các nước Đông Á như Trung Quốc, Đài Loan, bán đảo Triều Tiên,
+            và các nước Đông Nam Á như Singapore, Malaysia, Indonesia và Việt Nam. Tại Việt Nam trước ngày Tết còn có phong tục như "cúng Táo Quân" (23 tháng Chạp Âm lịch) và "cúng Tất Niên" (29 hoặc 30 tháng Chạp Âm lịch).
+            Vì Tết tính theo Âm lịch nên Tết Nguyên Đán của Việt Nam muộn hơn Tết Dương lịch (hay Tết Tây). Do quy luật 3 năm nhuận một tháng của âm lịch nên ngày đầu năm của dịp Tết Nguyên đán không bao giờ trước ngày 21 tháng 1
+            Dương lịch và sau ngày 20 tháng 2 Dương lịch mà rơi vào giữa những ngày này.
+        </p>
+    </div>
+    <div class="item5">
+        <h3>Text</h3>
+       <p> Rằm tháng Chạp là lễ cúng rằm của tháng tổng kết cuối cùng của một năm, chuẩn bị cho lễ cúng ông Táo và lễ Giao Thừa đón năm mới. Chính vì vậy, nhiều gia đình Việt coi trọng lễ này hơn các lễ cúng rằm khác trong năm.
+        Các lễ nghi và thủ tục cúng rằm tháng Chạp cũng được chuẩn bị chu đáo, kỹ lưỡng hơn. Rằm tháng Chạp vào ngày 15 tháng cuối cùng âm lịch, tức là chỉ còn 8 ngày nữa đến Tết ông Táo, và khoảng nửa tháng nữa là đến lễ cúng tất niên đón năm mới.
+       </p>
+    </div>
+    <div class="item6">
+        <ul>
+            <li>ADS</li>
+            <li>ADS</li>
+        </ul>
+    </div>
+    <div class="item7"> &copy; 2005-2023 Bản quyền thuộc về Báo điện tử Dân trí</div>
+</div>
+</body>
+</html>
